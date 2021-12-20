@@ -14,7 +14,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install pipenv
           pipenv install --dev
-      - name: run pylint
-        run: pipenv run pylint app
       - name: run nosetests
         run: pipenv run nosetests
